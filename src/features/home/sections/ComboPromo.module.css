@@ -18,10 +18,13 @@
 
 .image {
   width: 100%;
+  max-width: 420px; /* tamaño de la imagen del combo */
+  height: auto;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 260px 20px 20px 20px;
+  border-radius: 180px 16px 16px 16px;
   display: block;
+  justify-self: center;
 }
 
 @media (max-width: 760px) {
@@ -31,5 +34,6 @@
 
   .image {
     order: -1;
+    max-width: 320px;
   }
 }
