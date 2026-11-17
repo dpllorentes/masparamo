@@ -1,0 +1,38 @@
+.btn {
+  display: inline-block;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  padding: 9px 26px;
+  font: 600 0.92rem var(--font-body);
+  text-decoration: none;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.btn:hover {
+  background: var(--forest);
+  color: var(--marfil);
+  border-color: var(--forest);
+}
+
+/* Variante clara, para fondos oscuros (hero / nav sobre foto) */
+.light {
+  color: #fff;
+}
+
+.light:hover {
+  background: #fff;
+  color: var(--forest);
+  border-color: #fff;
+}
+
+/* Variante del catálogo: borde verde bosque y un poco más amplia */
+.solid {
+  border-color: var(--forest);
+  padding: 10px 28px;
+}

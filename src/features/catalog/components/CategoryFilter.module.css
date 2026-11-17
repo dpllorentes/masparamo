@@ -1,0 +1,24 @@
+.group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chip {
+  border: 1.5px solid var(--forest);
+  background: transparent;
+  color: var(--forest);
+  border-radius: 999px;
+  padding: 7px 18px;
+  font: 600 0.93rem var(--font-body);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.chip[aria-pressed='true'] {
+  background: var(--forest);
+  color: var(--marfil);
+}

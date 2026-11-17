@@ -1,0 +1,87 @@
+import type { Product } from '@/types/catalog';
+import { images } from './images';
+
+const BUZO_POSITION = '75% 50%';
+
+export const products: readonly Product[] = [
+  {
+    id: 'vela-vainilla-madera',
+    name: 'Vela Vainilla & Madera',
+    price: 38000,
+    category: 'velas',
+    image: images.velaVainilla,
+    imageAlt: 'Vela Vainilla y Madera',
+    waMessage: 'Hola +PARAMO, quiero la vela Vainilla & Madera.',
+  },
+  {
+    id: 'vela-lavanda-vainilla',
+    name: 'Vela Lavanda & Vainilla',
+    price: 38000,
+    category: 'velas',
+    image: images.velaLavanda,
+    imageAlt: 'Vela Lavanda y Vainilla',
+    waMessage: 'Hola +PARAMO, quiero la vela Lavanda & Vainilla.',
+  },
+  {
+    id: 'vela-eucalipto-menta',
+    name: 'Vela Eucalipto & Menta',
+    price: 38000,
+    category: 'velas',
+    image: images.velaEucalipto,
+    imageAlt: 'Vela Eucalipto y Menta',
+    waMessage: 'Hola +PARAMO, quiero la vela Eucalipto & Menta.',
+  },
+  {
+    id: 'mug',
+    name: 'Mug personalizado',
+    price: 28000,
+    category: 'mugs',
+    image: images.mug,
+    imageAlt: 'Mug personalizado',
+    waMessage: 'Hola +PARAMO, quiero un mug.',
+  },
+  {
+    id: 'termo',
+    name: 'Termo',
+    price: 45000,
+    category: 'mugs',
+    placeholder: 'salvia',
+    waMessage: 'Hola +PARAMO, quiero un termo.',
+  },
+  {
+    id: 'buzo-bordado',
+    name: 'Buzo bordado',
+    price: 85000,
+    category: 'ropa',
+    image: images.buzo,
+    imageAlt: 'Buzo bordado',
+    imagePosition: BUZO_POSITION,
+    waMessage: 'Hola +PARAMO, quiero un buzo.',
+  },
+  {
+    id: 'camiseta',
+    name: 'Camiseta',
+    price: 48000,
+    category: 'ropa',
+    image: images.camiseta,
+    imageAlt: 'Camiseta blanca',
+    waMessage: 'Hola +PARAMO, quiero una camiseta.',
+  },
+  {
+    id: 'gorra',
+    name: 'Gorra',
+    price: 38000,
+    category: 'ropa',
+    placeholder: 'arena',
+    waMessage: 'Hola +PARAMO, quiero una gorra.',
+  },
+  {
+    id: 'combo-vela-mug',
+    name: 'Combo vela + mug',
+    price: 75000,
+    category: 'combos',
+    image: images.combo,
+    imageAlt: 'Combo de regalo',
+    waMessage: 'Hola +PARAMO, quiero un combo de vela y mug.',
+  },
+];

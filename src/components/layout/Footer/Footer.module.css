@@ -1,0 +1,12 @@
+.footer {
+  background: var(--forest);
+  color: var(--footer-ink);
+  padding: 22px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: inherit;
+  text-underline-offset: 4px;
+}

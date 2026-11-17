@@ -1,0 +1,19 @@
+/*
+ * El PNG se usa como máscara y se pinta con `currentColor`:
+ * blanco sobre el hero (menú overlay) y verde bosque en el menú claro.
+ * Tamaño: cambia `height`; el ancho se calcula con la proporción del logo.
+ */
+.logo {
+  display: block;
+  height: 50px;
+  aspect-ratio: 1080 / 421;
+  background-color: currentColor;
+  -webkit-mask: var(--logo-src) center / contain no-repeat;
+  mask: var(--logo-src) center / contain no-repeat;
+}
+
+@media (max-width: 760px) {
+  .logo {
+    height: 40px;
+  }
+}

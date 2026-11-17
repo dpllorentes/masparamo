@@ -1,0 +1,70 @@
+.logo {
+  font: 400 1.1rem var(--font-logo);
+  text-decoration: none;
+}
+
+/* ===== Variante "overlay": sobre el hero del inicio ===== */
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 3;
+  color: #fff;
+}
+
+.overlay .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  font-size: 0.92rem;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s var(--ease);
+}
+
+.link:hover::after,
+.link.active::after {
+  transform: scaleX(1);
+}
+
+/* ===== Variante "bar": página de catálogo y secundarias ===== */
+.bar .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px var(--gutter);
+}
+
+.back {
+  font-size: 0.93rem;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .links .link {
+    display: none;
+  }
+}

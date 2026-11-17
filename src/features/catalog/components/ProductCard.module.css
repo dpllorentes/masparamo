@@ -1,0 +1,78 @@
+.card {
+  margin: 0;
+  animation: appear 0.35s var(--ease) both;
+}
+
+.media {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-warm);
+  font-size: 0.9rem;
+}
+
+.salvia {
+  background: var(--salvia);
+}
+
+.arena {
+  background: var(--arena);
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 8px;
+  font-size: 0.93rem;
+}
+
+.name {
+  line-height: 1.35;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.order {
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+/* Variante "full" (página de catálogo): título en Fraunces, radios mayores */
+.full .media {
+  border-radius: 8px;
+}
+
+.full .caption {
+  padding-top: 10px;
+  font-size: 1rem;
+}
+
+.full .name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
