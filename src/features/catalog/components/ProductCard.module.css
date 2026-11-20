@@ -60,10 +60,22 @@
   font-size: 1rem;
 }
 
+/* Mismo estilo que las cards de "Qué puedes personalizar" */
 .full .name {
   font-family: var(--font-display);
-  font-size: 1.2rem;
-  line-height: 1.1;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.full .price {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--forest);
+}
+
+.full .order {
+  font-size: 0.9rem;
 }
 
 @keyframes appear {
